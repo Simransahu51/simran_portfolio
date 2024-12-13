@@ -45,7 +45,7 @@ const projects: Project[] = [
   {
     title: "Gauge Detection",
     description:
-      "A machine learning project for detecting and analyzing gauges from images or videos, useful in industrial settings.",
+      "A machine learning project for detecting and analyzing gauges from images or videos.",
     image: "/gaugeDetection.jpg",
     tags: ["Python", "OpenCV", "TensorFlow", "Machine Learning"],
     github: "https://github.com/your-repo/gauge-detection",
