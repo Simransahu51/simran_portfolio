@@ -21,8 +21,8 @@ const projects: Project[] = [
       "A tool to convert billing information into Excel spreadsheets for easy management and analysis.",
     image: "/billToExcel.jpg",
     tags: ["Python", "Pandas", "OpenPyXL", "Automation"],
-    github: "https://github.com/your-repo/bill-to-excel",
-    demo: "https://demo.com/bill-to-excel",
+    github: "https://github.com/simransahu51",
+    
   },
   {
     title: "Excel to PDF",
@@ -30,8 +30,8 @@ const projects: Project[] = [
       "A tool for converting Excel spreadsheets to PDF format, making reports and data sharing more convenient.",
     image: "/excelToPdf.jpg",
     tags: ["Python", "Pandas", "ReportLab", "Automation"],
-    github: "https://github.com/your-repo/excel-to-pdf",
-    demo: "https://demo.com/excel-to-pdf",
+    github: "https://github.com/simransahu51",
+    
   },
   {
     title: "Folder to Excel",
@@ -39,7 +39,7 @@ const projects: Project[] = [
       "A utility to convert data from files within a folder into an organized Excel spreadsheet.",
     image: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2",
     tags: ["Python", "Pandas", "OS", "Excel"],
-    github: "https://github.com/your-repo/folder-to-excel",
+    github: "https://github.com/simransahu51",
     demo: "https://demo.com/folder-to-excel",
   },
   {
@@ -48,7 +48,7 @@ const projects: Project[] = [
       "A machine learning project for detecting and analyzing gauges from images or videos.",
     image: "/gaugeDetection.jpg",
     tags: ["Python", "OpenCV", "TensorFlow", "Machine Learning"],
-    github: "https://github.com/your-repo/gauge-detection",
+    github: "https://github.com/simransahu51",
     demo: "https://demo.com/gauge-detection",
   },
   {
@@ -57,7 +57,7 @@ const projects: Project[] = [
       "A computer vision project for detecting objects in images and videos using deep learning techniques.",
     image: "/objectDetection.jpg",
     tags: ["Python", "OpenCV", "TensorFlow", "Deep Learning"],
-    github: "https://github.com/your-repo/object-detection",
+    github: "https://github.com/simransahu51",
     demo: "https://demo.com/object-detection",
   },
 ];
