@@ -117,7 +117,7 @@ const fullstackSkills = [
 
         {/* Fullstack Development Section */}
         <div>
-          <h3 className="text-xl font-semibold text-center text-gray-800 dark:text-gray-300 mb-6">Fullstack Development</h3>
+          <h3 className="text-xl font-semibold text-center text-gray-800 dark:text-gray-300 mb-6">Software Engineering</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 justify-items-center">
             {fullstackSkills.map(({ name, Icon, color }, index) => (
               <motion.div

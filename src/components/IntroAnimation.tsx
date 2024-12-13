@@ -38,7 +38,7 @@ export function IntroAnimation() {
           transition={{ delay: 0.7 }}
           className="text-gray-400 mt-2"
         >
-          Data Science Engineer & Web Developer
+          Data Science & Software Engineer
         </motion.p>
       </motion.div>
     </motion.div>

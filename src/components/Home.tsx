@@ -38,7 +38,7 @@ export function Home() {
           transition={{ delay: 0.5 }}
           className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8"
         >
-          Data Science Engineer & Full Stack Developer
+          Data Science and Software Engineer
         </motion.p>
         <motion.div
           initial={{ opacity: 0 }}

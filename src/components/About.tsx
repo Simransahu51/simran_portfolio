@@ -38,7 +38,7 @@ export function About() {
           Simran is a skilled <strong>Data Science Engineer</strong> with
           expertise in <strong>Data visualization</strong>,{" "}
           <strong>Machine Learning</strong>, and a solid background in{" "}
-          <strong>Full Stack Development</strong>
+          <strong>Software Engineering</strong>
           . She specializes in creating data-driven solutions and building
           interactive visualizations to make complex data accessible. As an{" "}
           <strong>Implementation Engineer</strong>, Simran leverages her

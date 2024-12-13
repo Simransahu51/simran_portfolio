@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { Github, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css'; // Import core Swiper styles
+import "swiper/css"; // Import core Swiper styles
 import { Navigation } from "swiper/modules"; // Import Navigation module from swiper directly
-import 'swiper/css/navigation'; // Import navigation styles
+import "swiper/css/navigation"; // Import navigation styles
 
 interface Project {
   title: string;
@@ -16,49 +16,49 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "AI Chatbot Assistant",
+    title: "Bill to Excel",
     description:
-      "A conversational AI chatbot built using natural language processing techniques and GPT models.",
-    image: "https://images.pexels.com/photos/1181348/pexels-photo-1181348.jpeg",
-    tags: ["Python", "NLP", "GPT", "FastAPIs"],
-    github: "https://github.com/your-repo/chatbot-assistant",
-    demo: "https://demo.com/ai-chatbot",
+      "A tool to convert billing information into Excel spreadsheets for easy management and analysis.",
+    image: "/billToExcel.jpg",
+    tags: ["Python", "Pandas", "OpenPyXL", "Automation"],
+    github: "https://github.com/your-repo/bill-to-excel",
+    demo: "https://demo.com/bill-to-excel",
   },
   {
-    title: "Image Classification System",
+    title: "Excel to PDF",
     description:
-      "A deep learning model to classify images into multiple categories with high accuracy.",
-    image: "https://images.pexels.com/photos/2582966/pexels-photo-2582966.jpeg",
-    tags: ["TensorFlow", "Keras", "Python", "Computer Vision"],
-    github: "https://github.com/your-repo/image-classification",
-    demo: "https://demo.com/image-classification",
+      "A tool for converting Excel spreadsheets to PDF format, making reports and data sharing more convenient.",
+    image: "/excelToPdf.jpg",
+    tags: ["Python", "Pandas", "ReportLab", "Automation"],
+    github: "https://github.com/your-repo/excel-to-pdf",
+    demo: "https://demo.com/excel-to-pdf",
   },
   {
-    title: "Predictive Analytics Dashboard",
+    title: "Folder to Excel",
     description:
-      "An interactive dashboard for visualizing and predicting sales trends using machine learning.",
-    image: "https://images.pexels.com/photos/3184302/pexels-photo-3184302.jpeg",
-    tags: ["Python", "Pandas", "Scikit-learn", "Dash"],
-    github: "https://github.com/your-repo/predictive-analytics",
-    demo: "https://demo.com/predictive-analytics",
+      "A utility to convert data from files within a folder into an organized Excel spreadsheet.",
+    image: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2",
+    tags: ["Python", "Pandas", "OS", "Excel"],
+    github: "https://github.com/your-repo/folder-to-excel",
+    demo: "https://demo.com/folder-to-excel",
   },
   {
-    title: "Predictive Analytics Dashboard",
+    title: "Gauge Detection",
     description:
-      "An interactive dashboard for visualizing and predicting sales trends using machine learning.",
-    image: "https://images.pexels.com/photos/3184302/pexels-photo-3184302.jpeg",
-    tags: ["Python", "Pandas", "Scikit-learn", "Dash"],
-    github: "https://github.com/your-repo/predictive-analytics",
-    demo: "https://demo.com/predictive-analytics",
+      "A machine learning project for detecting and analyzing gauges from images or videos, useful in industrial settings.",
+    image: "/gaugeDetection.jpg",
+    tags: ["Python", "OpenCV", "TensorFlow", "Machine Learning"],
+    github: "https://github.com/your-repo/gauge-detection",
+    demo: "https://demo.com/gauge-detection",
   },
   {
-    title: "Predictive Analytics Dashboard",
+    title: "Object Detection",
     description:
-      "An interactive dashboard for visualizing and predicting sales trends using machine learning.",
-    image: "https://images.pexels.com/photos/3184302/pexels-photo-3184302.jpeg",
-    tags: ["Python", "Pandas", "Scikit-learn", "Dash"],
-    github: "https://github.com/your-repo/predictive-analytics",
-    demo: "https://demo.com/predictive-analytics",
+      "A computer vision project for detecting objects in images and videos using deep learning techniques.",
+    image: "/objectDetection.jpg",
+    tags: ["Python", "OpenCV", "TensorFlow", "Deep Learning"],
+    github: "https://github.com/your-repo/object-detection",
+    demo: "https://demo.com/object-detection",
   },
 ];
 
@@ -66,16 +66,19 @@ export function Projects() {
   return (
     <section className="py-20 px-10 bg-gray-50 dark:bg-gray-800/50">
       <motion.div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">
+          Featured Projects
+        </h2>
         <div className="relative">
           <Swiper
             spaceBetween={30}
             slidesPerView="auto"
             loop={true} // Enables cyclic behavior
             centeredSlides={false} // Keeps the active slide centered
-            navigation={{ // Enable navigation
-              prevEl: '.swiper-button-prev',
-              nextEl: '.swiper-button-next',
+            navigation={{
+              // Enable navigation
+              prevEl: ".swiper-button-prev",
+              nextEl: ".swiper-button-next",
             }}
             breakpoints={{
               640: {
@@ -86,22 +89,22 @@ export function Projects() {
               },
               1024: {
                 slidesPerView: 3, // 3 slides per view on large screens
-              }
+              },
             }}
             modules={[Navigation]} // Include the Navigation module
           >
             {projects.map((project, index) => (
               <SwiperSlide key={index} className="pb-4">
-                <motion.div
-                  className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg min-h-[500px] cursor-grab"
-                >
+                <motion.div className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg min-h-[500px] cursor-grab">
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-48 object-cover"
                   />
                   <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                    <h3 className="text-xl font-semibold mb-2">
+                      {project.title}
+                    </h3>
                     <p className="text-gray-600 dark:text-gray-400 mb-4">
                       {project.description}
                     </p>
