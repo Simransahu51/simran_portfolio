@@ -23,8 +23,7 @@ const machineLearningSkills = [
   { name: "TensorFlow", Icon: SiPython, color: "#FF6F00" },
   { name: "Deep Learning", Icon: FaReact, color: "#00B0FF" },
   { name: "Keras", Icon: FaNodeJs, color: "#FF4040" },
-  { name: "Natural Language Processing", Icon: SiFlask, color: "#2B2B2B" },
-  { name: "Reinforcement Learning", Icon: SiDjango, color: "#092E20" },
+  { name: "NLP", Icon: SiFlask, color: "#2B2B2B" },
 ];
 
 const fullstackSkills = [
@@ -40,7 +39,7 @@ const fullstackSkills = [
 
 
   return (
-    <section id="skills" className="py-20 max-w-6xl mx-auto">
+    <section id="skills" className="py-20 px-10 max-w-6xl mx-auto">
       <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-500 to-purple-500 text-transparent bg-clip-text">
         My Skills
       </h2>

@@ -20,7 +20,7 @@ const projects: Project[] = [
     description:
       "A conversational AI chatbot built using natural language processing techniques and GPT models.",
     image: "https://images.pexels.com/photos/1181348/pexels-photo-1181348.jpeg",
-    tags: ["Python", "Natural Language Processing", "GPT", "FastAPIs"],
+    tags: ["Python", "NLP", "GPT", "FastAPIs"],
     github: "https://github.com/your-repo/chatbot-assistant",
     demo: "https://demo.com/ai-chatbot",
   },
@@ -64,7 +64,7 @@ const projects: Project[] = [
 
 export function Projects() {
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-800/50">
+    <section className="py-20 px-10 bg-gray-50 dark:bg-gray-800/50">
       <motion.div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Featured Projects</h2>
         <div className="relative">
@@ -93,8 +93,7 @@ export function Projects() {
             {projects.map((project, index) => (
               <SwiperSlide key={index} className="pb-4">
                 <motion.div
-                  
-                  className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg min-h-full cursor-grab"
+                  className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg min-h-[500px] cursor-grab"
                 >
                   <img
                     src={project.image}
@@ -116,7 +115,7 @@ export function Projects() {
                         </span>
                       ))}
                     </div>
-                    <div className="flex gap-4">
+                    <div className="flex gap-4 absolute bottom-10">
                       {project.github && (
                         <a
                           href={project.github}
@@ -147,10 +146,10 @@ export function Projects() {
           </Swiper>
 
           {/* Custom navigation buttons */}
-          <div className="swiper-button-prev absolute top-1/2 -left-10 transform -translate-y-1/2 z-10  p-10 flex items-center justify-center  rounded-full  hover:bg-gray-600/20 dark:hover:bg-gray-700/20 transition-all">
+          <div className="swiper-button-prev absolute top-1/2 -left-11 transform -translate-y-1/2 z-10 px-8 py-11 flex items-center justify-center  rounded-full  hover:bg-gray-600/20 dark:hover:bg-gray-700/20 transition-all">
             <ChevronLeft className="w-7 h-7 opacity-0 transition-transform transform hover:scale-110" />
           </div>
-          <div className="swiper-button-next absolute top-1/2 -right-10 transform -translate-y-1/2 z-10  p-10 flex items-center justify-center  rounded-full  hover:bg-gray-600/20 dark:hover:bg-gray-700/20 transition-all">
+          <div className="swiper-button-next absolute top-1/2 -right-11 transform -translate-y-1/2 z-10 px-8 py-11 flex items-center justify-center  rounded-full  hover:bg-gray-600/20 dark:hover:bg-gray-700/20 transition-all">
             <ChevronRight className="w-7 h-7 opacity-0 transition-transform transform hover:scale-110" />
           </div>
         </div>
