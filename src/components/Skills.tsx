@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { SiPython, SiTableau, SiMysql, SiPostgresql, SiJupyter, SiPytorch, SiScikitlearn, SiFlask, SiDjango, SiHtml5, SiCss3, SiFastapi, SiAlwaysdata } from 'react-icons/si';
+import { SiPython, SiTableau, SiMysql, SiPostgresql, SiJupyter, SiPytorch, SiScikitlearn, SiFlask, SiHtml5, SiCss3, SiFastapi, SiAlwaysdata } from 'react-icons/si';
 import { FaReact, FaJs, FaGitAlt, FaNodeJs } from 'react-icons/fa';
 import { MdDataExploration } from 'react-icons/md';
 import { PiMicrosoftPowerpointLogoFill } from 'react-icons/pi';

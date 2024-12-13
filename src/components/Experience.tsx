@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import { Calendar, MapPin } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Calendar, MapPin } from "lucide-react";
 
 interface ExperienceItem {
   title: string;
@@ -11,38 +11,38 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    title: "Data Science Engineer",
-    company: "Tech Innovations Inc.",
-    location: "San Francisco, CA",
-    period: "2021 - Present",
+    title: "Software Engineer",
+    company: "Knowledge Lens Pvt Ltd.",
+    location: "Bangalore, IN",
+    period: "July 2024 - Present",
     description: [
-      "Led the development of a major e-commerce platform redesign",
-      "Mentored junior developers and conducted code reviews",
-      "Implemented CI/CD pipelines and testing strategies"
-    ]
+      "Focused on implementation and data science to drive project success",
+      "Developed and optimized data science models and algorithms for business solutions",
+      "Integrated SKADA systems, logbook functionality, and third-party APIs into applications",
+    ],
   },
   {
-    title: "Full Stack Developer",
-    company: "Digital Solutions Ltd.",
-    location: "New York, NY",
-    period: "2019 - 2021",
+    title: "Software Engineer Intern",
+    company: "Knowledge Lens Pvt Ltd.",
+    location: "Bangalore, IN",
+    period: "Jan 2024 - July 2024",
     description: [
-      "Developed and maintained multiple client applications",
-      "Integrated third-party APIs and payment systems",
-      "Optimized application performance and user experience"
-    ]
+      "Worked on frontend and backend development for multiple client applications",
+      "Implemented data science models and visualizations to enhance decision-making",
+      "Collaborated with cross-functional teams on project implementation and integration",
+    ],
   },
   {
-    title: "Frontend Developer",
-    company: "StartUp Co.",
-    location: "Boston, MA",
-    period: "2017 - 2019",
+    title: "Data Science Intern",
+    company: "Cinet IT Solution Co.",
+    location: "Odisha, IN",
+    period: "Jun 2023 - Aug 2023",
     description: [
-      "Built responsive web applications using React",
-      "Collaborated with designers to implement UI/UX improvements",
-      "Participated in agile development processes"
-    ]
-  }
+      "Performed data cleaning and preprocessing for model readiness",
+      "Developed and evaluated machine learning models for predictive analysis",
+      "Collaborated with cross-functional teams to derive insights from data",
+    ],
+  },
 ];
 
 export function Experience() {
