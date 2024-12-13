@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Brain, Code, Palette, Server } from "lucide-react";
+import { Brain } from "lucide-react";
 import { FaChartBar } from "react-icons/fa";
 import { GrAnalytics } from "react-icons/gr";
 

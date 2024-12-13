@@ -1,42 +1,43 @@
 import { motion } from 'framer-motion';
-import { FaJs, FaReact, FaNodeJs, FaGitAlt } from 'react-icons/fa';
-import { SiTailwindcss, SiPython, SiPytorch, SiR, SiTableau, SiScikitlearn, SiJupyter, SiMysql, SiPostgresql, SiDjango, SiFlask } from 'react-icons/si';
+import { SiPython, SiTableau, SiMysql, SiPostgresql, SiJupyter, SiPytorch, SiScikitlearn, SiFlask, SiDjango, SiHtml5, SiCss3, SiFastapi, SiAlwaysdata } from 'react-icons/si';
+import { FaReact, FaJs, FaGitAlt, FaNodeJs } from 'react-icons/fa';
 import { MdDataExploration } from 'react-icons/md';
+import { PiMicrosoftPowerpointLogoFill } from 'react-icons/pi';
 
 export function Skills() {
-  const dataScienceAndVisualizationSkills = [
-    { name: "Python", Icon: SiPython, color: "#3776AB" },
-    { name: "Data Visualization", Icon: SiTableau, color: "#E6B800" },
-    { name: "Data Exploration", Icon: MdDataExploration, color: "#6B8E23" },
-    { name: "SQL", Icon: SiMysql, color: "#00758F" },
-    { name: "PostgreSQL", Icon: SiPostgresql, color: "#4169E1" },
-    { name: "R", Icon: SiR, color: "#276DC3" },
-    { name: "Jupyter Notebooks", Icon: SiJupyter, color: "#F37626" },
-  ];
 
-  const machineLearningSkills = [
-    { name: "Machine Learning", Icon: SiPytorch, color: "#EE4C2C" },
-    { name: "Scikit-learn", Icon: SiScikitlearn, color: "#F7931E" },
-    { name: "TensorFlow", Icon: SiPython, color: "#FF6F00" },
-    { name: "Deep Learning", Icon: FaReact, color: "#00B0FF" },
-    { name: "Keras", Icon: FaNodeJs, color: "#FF4040" },
-    { name: "Natural Language Processing", Icon: SiFlask, color: "#2B2B2B" },
-    { name: "Reinforcement Learning", Icon: SiDjango, color: "#092E20" },
-  ];
+const dataScienceAndVisualizationSkills = [
+  { name: "Python", Icon: SiPython, color: "#3776AB" },
+  { name: "Data Visualization", Icon: SiAlwaysdata, color: "#E6B800" },
+  { name: "Tableau", Icon: SiTableau, color: "#E6B800" },
+  { name: "PowerBI", Icon: PiMicrosoftPowerpointLogoFill, color: "#009688" }, // PowerBI added
+  { name: "Data Exploration", Icon: MdDataExploration, color: "#6B8E23" },
+  { name: "SQL", Icon: SiMysql, color: "#00758F" },
+  { name: "PostgreSQL", Icon: SiPostgresql, color: "#4169E1" },
+  { name: "Jupyter Notebooks", Icon: SiJupyter, color: "#F37626" },
+];
 
-  const fullstackSkills = [
-    { name: "JavaScript", Icon: FaJs, color: "#F7DF1E" },
-    { name: "React", Icon: FaReact, color: "#61DAFB" },
-    { name: "Node.js", Icon: FaNodeJs, color: "#339933" },
-    { name: "Tailwind CSS", Icon: SiTailwindcss, color: "#38BDF8" },
-    { name: "Git", Icon: FaGitAlt, color: "#F05032" },
-    { name: "Express", Icon: FaNodeJs, color: "#000000" },
-    { name: "Django", Icon: SiDjango, color: "#092E20" },
-    { name: "Flask", Icon: SiFlask, color: "#2B2B2B" },
-    { name: "MongoDB", Icon: SiPython, color: "#4DB33D" },
-    { name: "MySQL", Icon: SiMysql, color: "#00758F" },
-    { name: "PostgreSQL", Icon: SiPostgresql, color: "#4169E1" },
-  ];
+const machineLearningSkills = [
+  { name: "Machine Learning", Icon: SiPytorch, color: "#EE4C2C" },
+  { name: "Scikit-learn", Icon: SiScikitlearn, color: "#F7931E" },
+  { name: "TensorFlow", Icon: SiPython, color: "#FF6F00" },
+  { name: "Deep Learning", Icon: FaReact, color: "#00B0FF" },
+  { name: "Keras", Icon: FaNodeJs, color: "#FF4040" },
+  { name: "Natural Language Processing", Icon: SiFlask, color: "#2B2B2B" },
+  { name: "Reinforcement Learning", Icon: SiDjango, color: "#092E20" },
+];
+
+const fullstackSkills = [
+  { name: "JavaScript", Icon: FaJs, color: "#F7DF1E" },
+  { name: "HTML", Icon: SiHtml5, color: "#E34F26" }, // HTML added
+  { name: "CSS", Icon: SiCss3, color: "#264de4" }, // CSS added
+  { name: "Git", Icon: FaGitAlt, color: "#F05032" },
+  { name: "FastAPI", Icon: SiFastapi, color: "#009688" }, // FastAPI added
+  { name: "MongoDB", Icon: SiPython, color: "#4DB33D" },
+  { name: "MySQL", Icon: SiMysql, color: "#00758F" },
+  { name: "PostgreSQL", Icon: SiPostgresql, color: "#4169E1" },
+];
+
 
   return (
     <section id="skills" className="py-20 max-w-6xl mx-auto">
