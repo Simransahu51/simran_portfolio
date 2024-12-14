@@ -10,6 +10,7 @@ import { Experience } from './components/Experience';
 import { Skills } from './components/Skills'; 
 import { useTheme } from './hooks/useTheme';
 import Footer from './components/Footer';
+import { Contact } from './components/Contact/Contact';
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -48,6 +49,9 @@ function App() {
         </section>
         <section id="experience">
           <Experience />
+        </section>
+        <section id="contact">
+          <Contact />
         </section>
       </main>
 

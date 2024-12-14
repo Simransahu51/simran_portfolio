@@ -21,7 +21,7 @@ const projects: Project[] = [
       "A tool to convert billing information into Excel spreadsheets for easy management and analysis.",
     image: "/billToExcel.jpg",
     tags: ["Python", "Pandas", "OpenPyXL", "Automation"],
-    github: "https://github.com/simransahu51",
+    github: "https://github.com/simransahu51/bill-to-excel.git",
     
   },
   {
@@ -30,7 +30,7 @@ const projects: Project[] = [
       "A tool for converting Excel spreadsheets to PDF format, making reports and data sharing more convenient.",
     image: "/excelToPdf.jpg",
     tags: ["Python", "Pandas", "ReportLab", "Automation"],
-    github: "https://github.com/simransahu51",
+    github: "https://github.com/simransahu51/excel-to-pdf.git",
     
   },
   {
@@ -39,7 +39,7 @@ const projects: Project[] = [
       "A utility to convert data from files within a folder into an organized Excel spreadsheet.",
     image: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2",
     tags: ["Python", "Pandas", "OS", "Excel"],
-    github: "https://github.com/simransahu51",
+    github: "https://github.com/Simransahu51/folder-to-excel.git",
     demo: "https://demo.com/folder-to-excel",
   },
   {
