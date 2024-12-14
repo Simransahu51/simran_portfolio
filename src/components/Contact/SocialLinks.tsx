@@ -1,30 +1,32 @@
-import { motion } from 'framer-motion';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Github, Linkedin, Twitter } from "lucide-react";
+import { DownloadButton } from "../common/DownloadButtom";
+import { downloadResume } from "../../utils/downloadResume";
 
 const socialLinks = [
   {
     icon: <Github className="w-5 h-5" />,
-    href: 'https://github.com/Simransahu51',
-    label: 'GitHub',
-    color: 'hover:text-blue-400'
+    href: "https://github.com/Simransahu51",
+    label: "GitHub",
+    color: "hover:text-blue-400",
   },
   {
     icon: <Linkedin className="w-5 h-5" />,
-    href: 'https://linkedin.com',
-    label: 'LinkedIn',
-    color: 'hover:text-blue-500'
+    href: "https://linkedin.com",
+    label: "LinkedIn",
+    color: "hover:text-blue-500",
   },
   {
     icon: <Twitter className="w-5 h-5" />,
-    href: 'https://twitter.com',
-    label: 'Twitter',
-    color: 'hover:text-blue-400'
-  }
+    href: "https://twitter.com",
+    label: "Twitter",
+    color: "hover:text-blue-400",
+  },
 ];
 
 export function SocialLinks() {
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-4 items-center max-md:justify-center">
       {socialLinks.map((link, index) => (
         <motion.a
           key={link.label}
@@ -43,6 +45,11 @@ export function SocialLinks() {
           {link.icon}
         </motion.a>
       ))}
+      <DownloadButton
+        label="Resume"
+        onClick={downloadResume}
+        className="bg-gradient-to-r from-blue-500 to-purple-500"
+      />
     </div>
   );
 }
